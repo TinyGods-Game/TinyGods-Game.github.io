@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TinyGods Support</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap">
+<style>
+/* Layout: one readable column; contact card first, then common questions. Matches the privacy page. */
+:root {
+  --bg: #f5f8fa; --surface: #ffffff; --fg: #142029; --dim: #52616d; --line: #d6dee5; --accent: #0a7f99; --on-accent: #ffffff;
+  --display: "Space Grotesk", system-ui, sans-serif; --body: "Inter", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0c141a; --surface: #131e26; --fg: #e3ecf1; --dim: #93a4b0; --line: #24333e; --accent: #4fd0ea; --on-accent: #06222a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0c141a; --surface: #131e26; --fg: #e3ecf1; --dim: #93a4b0; --line: #24333e; --accent: #4fd0ea; --on-accent: #06222a; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 680px; margin: 0 auto; padding-block: 48px 64px; display: flex; flex-direction: column; gap: 28px; }
+header { display: flex; flex-direction: column; gap: 6px; }
+.eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+h1 { font-family: var(--display); font-size: 2.2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--display); font-size: 1.2rem; margin: 0; text-wrap: balance; }
+p, ul { margin: 0; }
+ul { padding-left: 20px; }
+li + li { margin-top: 4px; }
+.lead { color: var(--dim); }
+.contact { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.email-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.email { font-family: var(--display); font-size: 1.25rem; font-weight: 700; user-select: all; overflow-wrap: anywhere; min-width: 0; }
+button { font: 600 14px var(--body); background: var(--accent); color: var(--on-accent); border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.small { font-size: 14px; color: var(--dim); }
+.faq { display: flex; flex-direction: column; gap: 20px; }
+.q { display: flex; flex-direction: column; gap: 6px; padding-top: 18px; border-top: 1px solid var(--line); }
+a { color: var(--accent); }
+footer { border-top: 1px solid var(--line); padding-top: 16px; color: var(--dim); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">TinyGods for iPhone and iPad</span>
+    <h1>TinyGods Support</h1>
+    <p class="lead">Need help, found a bug, or have an idea? We'd love to hear from you.</p>
+  </header>
+
+  <div class="contact">
+    <h2>Email us</h2>
+    <div class="email-row">
+      <span class="email" id="email">tinygods.support@icloud.com</span>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+    <p class="small">We usually answer within a few days. If you're reporting a bug, tell us your device (like iPhone 15 or iPad Air), the game mode, and what happened just before the problem.</p>
+  </div>
+
+  <section class="faq">
+    <h2>Common questions</h2>
+
+    <div class="q">
+      <h3 style="margin:0;font-size:1rem">Where is my progress saved?</h3>
+      <p>Only on your device. Your tinys, missions, Sandbox levels, saved runs and run history are stored inside the app on your iPhone or iPad. There is no account and nothing is sent online.</p>
+    </div>
+
+    <div class="q">
+      <h3 style="margin:0;font-size:1rem">I deleted the app. Can I get my progress back?</h3>
+      <p>Sorry, no. Deleting the app also deletes everything it saved, and we don't keep a copy anywhere. If you restore your whole device from an iCloud or computer backup made before you deleted it, your progress may come back with it.</p>
+    </div>
+
+    <div class="q">
+      <h3 style="margin:0;font-size:1rem">Can I move my progress to a new iPhone or iPad?</h3>
+      <p>Yes, if you set up the new device from a backup of the old one (Apple's Quick Start or an iCloud backup). Installing the game fresh on a new device starts over.</p>
+    </div>
+
+    <div class="q">
+      <h3 style="margin:0;font-size:1rem">Can I buy tinys?</h3>
+      <p>No. Tinys are earned only by playing: passing missions, reaching History goals, and the practice run. There are no purchases in TinyGods.</p>
+    </div>
+
+    <div class="q">
+      <h3 style="margin:0;font-size:1rem">I'm new. Where do I start?</h3>
+      <p>Open the Story tab and play the Practice run at the top. It explains every word and number first, then lets you try a short, easy run with tips along the way.</p>
+    </div>
+
+    <div class="q">
+      <h3 style="margin:0;font-size:1rem">The read-aloud voice sounds robotic.</h3>
+      <p>The game uses the voices installed on your device. For a better one, go to Settings, then Accessibility, then Spoken Content, then Voices, and download an "Enhanced" or "Premium" English voice. Then pick it in the game's voice settings.</p>
+    </div>
+
+    <div class="q">
+      <h3 style="margin:0;font-size:1rem">Is the history in the game accurate?</h3>
+      <p>It's inspired by real history, but simplified to make a fun game. Please don't use it as a source for schoolwork or real decisions.</p>
+    </div>
+  </section>
+
+  <section class="q">
+    <h2>Privacy</h2>
+    <p>TinyGods collects no personal information. Read the full <a href="privacy.html">Privacy Policy and Terms of Use</a>.</p>
+  </section>
+
+  <footer>TinyGods Support. Last updated November 23, 2026.</footer>
+</main>
+
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copy address'; }, 2000); }
+  function selectIt() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected, press copy');
+  }
+  try { navigator.clipboard.writeText(text).then(function () { done('Copied'); }, selectIt); } catch (e) { selectIt(); }
+});
+</script>
+</body>
+</html>
